@@ -82,6 +82,11 @@ a {
   text-decoration: none;
   transition: background-color 0.3s;
 }
+i {
+  color: #703BE7;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
 .link:hover {
   background: linear-gradient(to bottom, #703BE7, #940084);
   border-color: #FDFDFD;
@@ -90,6 +95,10 @@ a {
   animation: shadow-pulse 2s infinite;
 }
 .link:hover a{
+  color: #FDFDFD;
+  text-decoration: none;
+}
+.link:hover i{
   color: #FDFDFD;
   text-decoration: none;
 }
