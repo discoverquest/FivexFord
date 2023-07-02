@@ -8,14 +8,14 @@
 }
 
 body {
-  background-color: #FDFDFD;
+  background-color: #FFFFFF;
   background: -webkit-linear-gradient(
-      #FDFDFDcc,
-      #FDFDFDcc,
-      #00FBFFcc,
-      #940084cc
-    ),
-    url("images/background-image.jpg");
+      #FFFFFF,
+      #FDFDFD,
+      #00FBFF,
+      #FDFDFD,
+      #940084
+    );
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Roboto", sans-serif;
@@ -28,18 +28,37 @@ body {
 main {
   text-align: center;
   margin: 30px 50px 20px 50px;
+  justify-content: center;
 }
 
 .user-img {
   border-radius: 50px;
   max-width: 100px;
-  box-shadow: 0 0 10px 3px #FDFDFD;
+  box-shadow: 0 0 10px 5px #FDFDFD;
+}
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 2px 2px 2px 0 #FDFDFD;
+  }
+  25% {
+    box-shadow: 5px 5px 5px 0 #FDFDFD;
+  }
+  50% {
+    box-shadow: 2px 2px 2px 0 #FDFDFD;
+  }
+  75% {
+      box-shadow: 5px 5px 5px 0 #FDFDFD;
+    }
+  100% {
+      box-shadow: 2px 2px 2px 0 #FDFDFD;
+  }
 }
 
 main h1 {
   color: #703BE7cc;
-  font-size: 1.2rem;
-  text-shadow: 2px 2px 5px #FDFDFD;
+  font-size: 1.75rem;
+  text-shadow: 0 1px 1px #FFFFFF;
   margin: 0.5em 0 1.5em 0;
 }
 
@@ -48,23 +67,32 @@ main h1 {
   width: 100%;
   font-size: 1.2rem;
   background-color: #FDFDFD;
-  box-shadow:  0 0 10px 0 #FDFDFD;
-  border-color: #FDFDFD;
-  border-style: outset;
   border-radius: 20px;
+  box-shadow: 0 2px 5px 0 #000000;
   margin-top: 1.3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
-  
 
 a { 
   color: #703BE7;
   text-decoration: none;
+  transition: background-color 0.3s;
 }
-
+.link:hover {
+  background: linear-gradient(to bottom, #703BE7, #940084);
+  border-color: #FDFDFD;
+  border-style: inset;
+  border-radius: 20px;
+  animation: shadow-pulse 2s infinite;
+}
+.link:hover a{
+  color: #FDFDFD;
+  text-decoration: none;
+}
 @media screen and (min-width: 500px) {
   body {
     padding: 20px 50px;
