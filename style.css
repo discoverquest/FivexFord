@@ -18,7 +18,7 @@ body {
     );
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Helvetica', sans-serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
