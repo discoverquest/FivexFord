@@ -1,0 +1,85 @@
+/*   </body> */
+/* </html> */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FDFDFD;
+  background: -webkit-linear-gradient(
+      #FDFDFDcc,
+      #FDFDFDcc,
+      #00FBFFcc,
+      #940084cc
+    ),
+    url("images/background-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  text-align: center;
+  margin: 30px 50px 20px 50px;
+}
+
+.user-img {
+  border-radius: 50px;
+  max-width: 100px;
+  box-shadow: 0 0 10px 3px #FDFDFD;
+}
+
+main h1 {
+  color: #703BE7;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 5px #FDFDFD;
+  margin: 0.5em 0 1.5em 0;
+}
+
+.link {
+  height: 50px;
+  width: 100%;
+  font-size: 1.2rem;
+  background-color: #FDFDFD;
+  border-color: #FDFDFD;
+  border-style: outset;
+  border-radius: 20px;
+  margin-top: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+  
+
+a {
+  color: #703BE7;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    padding: 20px 50px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  main {
+    min-width: 800px;
+    padding: 20px 50px;
+  }
+}
