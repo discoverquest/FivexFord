@@ -37,7 +37,7 @@ main {
 }
 
 main h1 {
-  color: #703BE7;
+  color: #703BE7cc;
   font-size: 1.2rem;
   text-shadow: 2px 2px 5px #FDFDFD;
   margin: 0.5em 0 1.5em 0;
@@ -48,6 +48,7 @@ main h1 {
   width: 100%;
   font-size: 1.2rem;
   background-color: #FDFDFD;
+  box-shadow:  0 0 10px 0 #FDFDFD;
   border-color: #FDFDFD;
   border-style: outset;
   border-radius: 20px;
@@ -59,7 +60,7 @@ main h1 {
 }
   
 
-a {
+a { 
   color: #703BE7;
   text-decoration: none;
 }
