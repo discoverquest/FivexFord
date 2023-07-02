@@ -77,14 +77,8 @@ main h1 {
   transition: background-color 0.3s;
 }
 
-a { 
-  color: #703BE7;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
 i {
-  color: #703BE7;
-  text-decoration: none;
+  color:  #703BE7;
   transition: background-color 0.3s;
 }
 .link:hover {
@@ -93,10 +87,6 @@ i {
   border-style: inset;
   border-radius: 20px;
   animation: shadow-pulse 2s infinite;
-}
-.link:hover a{
-  color: #FDFDFD;
-  text-decoration: none;
 }
 .link:hover i{
   color: #FDFDFD;
